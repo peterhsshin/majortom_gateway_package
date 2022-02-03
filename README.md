@@ -24,3 +24,5 @@ or [come talk to us](https://slack.kubos.com) if you have any comments/questions
 ### Testing 
 
 To run all tests, execute `./dockertest.sh` or push a branch and let the CI system do it.
+
+EDIT FOR TESTING
