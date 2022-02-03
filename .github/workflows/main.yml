@@ -40,8 +40,8 @@ jobs:
     - run: java -version
     - run: export LC_ALL=C.UTF-8
     - run: export LANG=C.UTF-8
-    - run: sudo apt install -y python3.6 python3-pip virtualenv
-    - run: sudo python3.6 -m pip install --upgrade pip
+    - run: sudo apt install -y python3.8 python3-pip virtualenv
+    - run: sudo python3.8 -m pip install --upgrade pip
     - run: |
         # Install nodejs 16.x
         sudo curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
@@ -77,6 +77,3 @@ jobs:
       env:
         CL_API_TOKEN: ${{ secrets.CL_API_TOKEN }}
       run: ./CanvassForSecurity scan ./analyzer_results/analyzer-result.yml
-
-
-    
