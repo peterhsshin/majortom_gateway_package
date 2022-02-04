@@ -40,8 +40,8 @@ jobs:
     - run: java -version
     - run: export LC_ALL=C.UTF-8
     - run: export LANG=C.UTF-8
-    - run: sudo apt install -y python3.6 python3-pip virtualenv
-    - run: sudo python3.6 -m pip install --upgrade pip==18.0 setuptools
+    - run: sudo apt install -y python3.8 python3-pip virtualenv
+    - run: sudo python3.8 -m pip install --upgrade pip==18.0 setuptools
     - run: |
         curl -o cfs.zip https://rivera.canvasslabs.com:5000/canvass_for_security/client/download/linux
         unzip cfs.zip
@@ -55,7 +55,7 @@ jobs:
         unzip ort_binaries_only.zip
         rm ort_binaries_only.zip
     - run: |
-        virtualenv --python=python3.6 venv
+        virtualenv --python=python3.8 venv
         source venv/bin/activate
         cd ./ort
         set +e
